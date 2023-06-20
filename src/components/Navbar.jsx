@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import styles from "../styles"
 import { useState } from "react"
 
 import { navLinks } from "../constants/index"
@@ -11,8 +10,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary
-    `}
+      className='sm:px-16 px-6  w-full flex items-center py-5 sticky top-0 z-20 bg-primary
+    '
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -23,7 +22,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-28 h-28 object-contain" />
+          <img src={logo} alt="logo" className="w-24 h-24 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
             Nazrul <br /><span>Islam</span> Chowdhury
           </p>
