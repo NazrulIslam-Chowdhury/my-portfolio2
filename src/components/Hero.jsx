@@ -1,4 +1,5 @@
 import Computers from "./canvas/Computers"
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -15,7 +16,25 @@ const Hero = () => {
           </p>
         </div>
       </div>
+
       <Computers />
+
+      <div className="absolute xs:bottom-2 bottom-44 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-spacing-4 border-secondary border-4 flex justify-center items-center p-2">
+            <motion.dev animate={{
+              y: [-16, 24, -16]
+            }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: 'loop'
+              }}
+              className='w-3 h-3 rounded-full bg-secondary mb-1'
+            />
+          </div>
+        </a>
+      </div>
     </section >
   )
 }
