@@ -58,11 +58,11 @@ const Works = () => {
       viewport={{ once: true, amount: 0.25 }}
       className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0">
       <motion.div variants={textVariant()}>
-        <p className='text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]'>
+        <p className='sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'>
           My Projects
         </p>
         <h2 className='text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>
-          Projects.
+          Projects
         </h2>
       </motion.div>
 
