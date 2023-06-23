@@ -2,6 +2,11 @@ import { motion } from 'framer-motion';
 import { slideIn, staggerContainer } from '../utils/motion';
 import { useRef, useState } from 'react';
 import EarthCanvas from './canvas/Earth';
+import emailjs from '@emailjs/browser';
+
+// template_m8j58tf
+// service_38hhx1a
+// OxEsg73zjkhHeZJci1Jwt
 
 const Contact = () => {
   const formRef = useRef();
@@ -12,9 +17,44 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => { }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => { }
+    setForm({ ...form, [name]: value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    emailjs.send(
+      'service_38hhx1a',
+      'template_m8j58tf',
+      {
+        from_name: form.name,
+        user_name: form.name,
+        to_name: "Nazrul",
+        user_email: form.email,
+        to_email: "nazrulislam66188@gmail.com",
+        message: form.message
+      },
+      'HXjlHLKHUos-E7lOa'
+    )
+      .then(() => {
+        setLoading(false);
+        alert('Thank you. I will get back to you as soon as possible');
+
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+      }, (error) => {
+        setLoading(false)
+        console.log(error)
+        alert('Something went wrong')
+      })
+  }
 
   return (
     <motion.section variants={staggerContainer()}
