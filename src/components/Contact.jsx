@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { slideIn, staggerContainer } from '../utils/motion';
 import { useRef, useState } from 'react';
-import Earth from './canvas/Earth';
+import EarthCanvas from './canvas/Earth';
 
 const Contact = () => {
   const formRef = useRef();
@@ -73,7 +73,7 @@ const Contact = () => {
           </label>
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-blue-950 rounded'
+            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-2xl shadow-black hover:bg-blue-950 rounded'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
@@ -82,9 +82,9 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl?:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <Earth />
+        <EarthCanvas />
       </motion.div>
     </motion.section>
   )

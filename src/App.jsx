@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router } from "react-router-dom"
+import { BrowserRouter } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
@@ -7,7 +7,7 @@ import Tech from "./components/Tech"
 import Works from "./components/Works"
 import Feedbacks from "./components/Feedbacks"
 import Contact from "./components/Contact"
-import Stars from "./components/canvas/Stars"
+import StarCanvas from "./components/canvas/Stars"
 
 const App = () => {
 
@@ -25,7 +25,7 @@ const App = () => {
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          <Stars />
+          <StarCanvas />
         </div>
       </div>
     </BrowserRouter>
