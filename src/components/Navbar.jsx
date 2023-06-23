@@ -8,6 +8,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
+  const link = "https://drive.google.com/file/d/1XyRQ01YwkENIXmIB6eAjVjivnt0C13dH/view?usp=drive_link";
   return (
     <nav
       className='sm:px-16 px-6  w-full flex items-center py-5 sticky top-0 z-20 bg-primary
@@ -24,7 +25,7 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-32 h-32 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            Nazrul <br /><span>Islam</span> Chowdhury
+            Nazrul <br /><span className="hidden md:inline lg:inline">Islam</span> Chowdhury
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -40,6 +41,12 @@ const Navbar = () => {
               </li>
             ))
           }
+          <li
+            className={`${active === link.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[16px] font-medium font-poppins cursor-pointer`}
+            onClick={() => window.open(link)}>
+            Download Resume
+          </li>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -65,6 +72,13 @@ const Navbar = () => {
                   </li>
                 ))
               }
+              <li
+                className={`${active === link.title ? "text-white" : "text-secondary"
+                  } hover:text-white text-[16px] font-medium font-poppins cursor-pointer`}
+                onClick={() => window.open(link)}
+              >
+                Download Resume
+              </li>
             </ul>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
 import { projects } from "../constants";
 import { Tilt } from "react-tilt";
 import { github } from "../assets";
+import { RiLiveFill } from 'react-icons/ri';
 
 
 const ProjectCard = ({ index, name, description, tags, source_code_link, image }) => {
@@ -20,13 +21,20 @@ const ProjectCard = ({ index, name, description, tags, source_code_link, image }
           <img src={image} alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
             <div onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
             </div>
+            <div onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <RiLiveFill className="w-1/2 h-1/2 object-contain" />
+            </div>
           </div>
+
         </div>
 
         <div className="mt-5">

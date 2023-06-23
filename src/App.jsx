@@ -8,6 +8,7 @@ import Works from "./components/Works"
 import Feedbacks from "./components/Feedbacks"
 import Contact from "./components/Contact"
 import StarCanvas from "./components/canvas/Stars"
+import Footer from "./components/Footer"
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
           <Contact />
           <StarCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   )
