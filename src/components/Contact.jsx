@@ -3,6 +3,7 @@ import { slideIn, staggerContainer } from '../utils/motion';
 import { useRef, useState } from 'react';
 import EarthCanvas from './canvas/Earth';
 import emailjs from '@emailjs/browser';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 // template_m8j58tf
 // service_38hhx1a
@@ -88,7 +89,7 @@ const Contact = () => {
           </label>
 
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type="email"
               name='email'
@@ -126,6 +127,9 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      <a href='#' className='absolute bottom-0 right-0'>
+        <AiOutlineArrowUp className='w-14 h-20 animate-bounce' />
+      </a>
     </motion.section>
   )
 }

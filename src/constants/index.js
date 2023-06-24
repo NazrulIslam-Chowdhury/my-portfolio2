@@ -12,18 +12,22 @@ import {
     tailwind,
     nodejs,
     mongodb,
-    git,
+    // git,
+    github1,
     figma,
-    docker,
+    // docker,
+    bootstrap,
     meta,
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    wildlia,
+    bikescape,
+    travelguru,
+    // educavo,
     threejs,
 } from "../assets";
+
 
 export const navLinks = [
     {
@@ -50,7 +54,7 @@ const services = [
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "Mern Stack Developer",
         icon: backend,
     },
     {
@@ -101,16 +105,16 @@ const technologies = [
         icon: threejs,
     },
     {
-        name: "git",
-        icon: git,
+        name: "github",
+        icon: github1,
     },
     {
         name: "figma",
         icon: figma,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "bootstrap",
+        icon: bootstrap,
     },
 ];
 
@@ -198,9 +202,9 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Wildlia",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Personal tour guide web application that enables users to hire tour guide for them. Users can add a service place. Users also can give a review and delete or update a review",
         tags: [
             {
                 name: "react",
@@ -214,51 +218,68 @@ const projects = [
                 name: "tailwind",
                 color: "pink-text-gradient",
             },
+            {
+                name: "node js",
+                color: "orange-text-gradient",
+            },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: wildlia,
+        source_code_link: "https://github.com/NazrulIslam-Chowdhury/wildlia",
+        live_demo_link: "https://wildlia-58185.web.app",
     },
+
     {
-        name: "Job IT",
+        name: "Travel Guru",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "mongodb",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
+            {
+                name: "node js",
+                color: "orange-text-gradient",
+            },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: travelguru,
+        source_code_link: "https://github.com/NazrulIslam-Chowdhury/destination-unknown",
+        live_demo_link: "https://astonishing-pudding-2f47a7.netlify.app",
     },
+
     {
-        name: "Trip Guide",
+        name: "Bike Scape",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Web-based platform that allows users to buy and manage bikes from various seller, providing an efficient solution for bike lovers.Users can add their bike for sell.",
         tags: [
             {
-                name: "nextjs",
+                name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "mongodb",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "tailwind",
                 color: "pink-text-gradient",
             },
+            {
+                name: "node js",
+                color: "orange-text-gradient",
+            },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: bikescape,
+        source_code_link: "https://github.com/NazrulIslam-Chowdhury/bike-scape",
+        live_demo_link: "https://bike-scape.web.app",
     },
 ];
 

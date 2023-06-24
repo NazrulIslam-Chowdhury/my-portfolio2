@@ -25,7 +25,7 @@ const Hero = () => {
           </li>
           <li
             onClick={() => window.open(facebook)}
-            className="cursor-pointer bg-blue-500 p-2"
+            className="cursor-pointer bg-blue-600 p-2"
           >
             <AiFillFacebook className="w-10 h-10" />
           </li>
@@ -38,9 +38,12 @@ const Hero = () => {
           <div className="w-1 sm:h-50 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className='font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>Hi, I'm <span className="text-violet-400">Nazrul</span></h1>
+          <h1 className='font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>Hi, I'm <span className="bg-gradient-to-r from-violet-500 to-violet-200" style={{
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"
+          }}>Nazrul</span></h1>
           <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">
-            I develop 3D visuals, user <br className="sm:block hidden" /> interfaces and web application.
+            I am a Frontend and MERN stack developer. I user <br className="sm:block hidden" /> interfaces and web application.
           </p>
         </div>
       </div>

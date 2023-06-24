@@ -2,7 +2,9 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 
 import { navLinks } from "../constants/index"
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, image } from "../assets";
+
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -11,8 +13,7 @@ const Navbar = () => {
   const link = "https://drive.google.com/file/d/1XyRQ01YwkENIXmIB6eAjVjivnt0C13dH/view?usp=drive_link";
   return (
     <nav
-      className='sm:px-16 px-6  w-full flex items-center py-5 sticky top-0 z-20 bg-primary
-    '
+      className='sm:px-16 px-6 w-full flex items-center fixed top-0 z-20 backdrop-blur-2xl'
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -28,7 +29,7 @@ const Navbar = () => {
             Nazrul <br /><span className="hidden md:inline lg:inline">Islam</span> Chowdhury
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none lg:flex hidden flex-row gap-10">
           {
             navLinks.map((link) => (
               <li
@@ -48,15 +49,18 @@ const Navbar = () => {
             Download Resume
           </li>
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className=" lg:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[20px h-[20px] object-contain cursor-pointer"
+            className="w-[20px h-[20px] object-contain cursor-pointer absolute z-[11] mr-2"
             onClick={() => setToggle(!toggle)}
           />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140p[x] z-10 rounded-xl`}>
-            <ul className="list-none flex flex-col gap-4 justify-end items-start">
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-black-100  absolute top-0 right-0 w-screen h-screen z-10 rounded`}>
+            <ul className="list-none flex flex-col gap-4 justify-center items-center w-full">
+              <li>
+                <img src={logo} alt="logo" className="w-32 h-32 object-contain" />
+              </li>
               {
                 navLinks.map((link) => (
                   <li
@@ -79,11 +83,16 @@ const Navbar = () => {
               >
                 Download Resume
               </li>
+              <li className="flex flex-row gap-3 items-center mr-20">
+                <img src={image} alt="Nazrul Islam Chowdhury" className="w-28 h-28 object-cover rounded-full" />
+                <p>Nazrul Islam Chowdhury</p>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
+
   )
 }
 

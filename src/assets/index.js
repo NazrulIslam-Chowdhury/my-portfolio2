@@ -11,6 +11,8 @@ import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
+import github1 from "./tech/github.png";
+import bootstrap from "./tech/bootstrap-logo-shadow.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
@@ -26,11 +28,14 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import wildlia from "./wildlia.png";
+import bikescape from "./bikescape.png";
+import travelguru from "./travelguru.png";
+import educavo from "./educavo.png";
+import image from "./image.jpg";
 
 export {
+  image,
   logo,
   backend,
   creator,
@@ -41,8 +46,10 @@ export {
   close,
   css,
   docker,
+  bootstrap,
   figma,
   git,
+  github1,
   html,
   javascript,
   mongodb,
@@ -56,7 +63,8 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  wildlia,
+  bikescape,
+  travelguru,
+  educavo
 };

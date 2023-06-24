@@ -6,7 +6,7 @@ import { github } from "../assets";
 import { RiLiveFill } from 'react-icons/ri';
 
 
-const ProjectCard = ({ index, name, description, tags, source_code_link, image }) => {
+const ProjectCard = ({ index, name, description, tags, source_code_link, live_demo_link, image }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -15,7 +15,7 @@ const ProjectCard = ({ index, name, description, tags, source_code_link, image }
           scale: 1,
           speed: 450
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-tr-3xl rounded-bl-3xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img src={image} alt={name}
@@ -28,7 +28,7 @@ const ProjectCard = ({ index, name, description, tags, source_code_link, image }
             >
               <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
             </div>
-            <div onClick={() => window.open(source_code_link, "_blank")}
+            <div onClick={() => window.open(live_demo_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <RiLiveFill className="w-1/2 h-1/2 object-contain" />
