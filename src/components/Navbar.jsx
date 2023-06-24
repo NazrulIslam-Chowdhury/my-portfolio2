@@ -34,8 +34,7 @@ const Navbar = () => {
             navLinks.map((link) => (
               <li
                 key={link.id}
-                className={`${active === link.title ? "text-white" : "text-secondary"
-                  } hover:text-white text-[18px] font-medium cursor-pointer`}
+                className={`${active === link.title ? "border-b-4 border-solid" : "text-secondary"}hover:text-white hover:border-b-4 hover:border-solid text-[18px] font-medium cursor-pointer transition-all`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -43,8 +42,8 @@ const Navbar = () => {
             ))
           }
           <li
-            className={`${active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[16px] font-medium font-poppins cursor-pointer`}
+            className={`${active === link.title ? "" : "text-secondary"
+              }hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer before:absolute before:left-0 before:w-full before:h-[2px] before:bg-[#fff] before:opacity-0 before:top-0 before:translate-x-[10px] hover:before:opacity-5 hover:before:translate-y-0 transition-all `}
             onClick={() => window.open(link)}>
             Download Resume
           </li>
@@ -56,7 +55,7 @@ const Navbar = () => {
             className="w-[20px h-[20px] object-contain cursor-pointer absolute z-[11] mr-2"
             onClick={() => setToggle(!toggle)}
           />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-black-100  absolute top-0 right-0 w-screen h-screen z-10 rounded`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-black-100 absolute top-0 right-0 w-screen h-screen z-10 rounded`}>
             <ul className="list-none flex flex-col gap-4 justify-center items-center w-full">
               <li>
                 <img src={logo} alt="logo" className="w-32 h-32 object-contain" />
@@ -65,8 +64,8 @@ const Navbar = () => {
                 navLinks.map((link) => (
                   <li
                     key={link.id}
-                    className={`${active === link.title ? "text-white" : "text-secondary"
-                      } hover:text-white text-[16px] font-medium font-poppins cursor-pointer`}
+                    className={`${active === link.title ? "border-b-4 border-solid transition-all" : "text-secondary"
+                      } hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer transition-all`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(link.title);
@@ -77,8 +76,8 @@ const Navbar = () => {
                 ))
               }
               <li
-                className={`${active === link.title ? "text-white" : "text-secondary"
-                  } hover:text-white text-[16px] font-medium font-poppins cursor-pointer`}
+                className={`${active === link.title ? "border-b-4 border-solid transition-all" : "text-secondary"
+                  } hover:text-white  text-[16px] font-medium font-poppins cursor-pointer transition-all`}
                 onClick={() => window.open(link)}
               >
                 Download Resume

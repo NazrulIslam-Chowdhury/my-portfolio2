@@ -33,9 +33,19 @@ import bikescape from "./bikescape.png";
 import travelguru from "./travelguru.png";
 import educavo from "./educavo.png";
 import image from "./image.jpg";
+import image2 from "./image2.jpg";
+import school from "./school.png";
+import college from "./college.png";
+import university from "./university.png";
+import course from "./course.png";
 
 export {
+  course,
+  school,
+  college,
+  university,
   image,
+  image2,
   logo,
   backend,
   creator,

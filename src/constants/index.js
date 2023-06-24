@@ -17,15 +17,19 @@ import {
     figma,
     // docker,
     bootstrap,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    // meta,
+    // starbucks,
+    // tesla,
+    // shopify,
+    school,
+    college,
+    university,
     wildlia,
     bikescape,
     travelguru,
     // educavo,
     threejs,
+    course,
 } from "../assets";
 
 
@@ -120,37 +124,50 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Working with Html5",
+        company_name: "Html",
+        icon: html,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: " 2021 - present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using Html 5 and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Working with Css",
+        company_name: "Css",
+        icon: css,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: " 2021 - present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using Css and other Css framework like Tailwind,Bootstrap and Material Ui.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Working with Javascript",
+        company_name: "JS",
+        icon: javascript,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: " 2022 - present",
+        points: [
+            "Developing and maintaining web applications using Javascript and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Working with React",
+        company_name: "React Js",
+        icon: reactjs,
+        iconBg: "#E6DEDD",
+        date: "july 2023 - Present",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -158,17 +175,45 @@ const experiences = [
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
+
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        title: "Web Development",
+        company_name: "Programming Hero",
+        icon: course,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "July 2022 - January 2023 (6th batch)",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Black Belt "
+        ],
+    },
+    {
+        title: "Bsc",
+        company_name: "National University of Bangladesh,Dhaka,Bangladesh",
+        icon: university,
+        iconBg: "#E6DEDD",
+        date: "August 2018 - Present",
+        points: [
+            "Mathematics"
+        ],
+    },
+    {
+        title: "HSC",
+        company_name: "Monpura College,Dhaka,Bangladesh",
+        icon: college,
+        iconBg: "#E6DEDD",
+        date: "2016",
+        points: [
+            "Science",
+        ],
+    },
+    {
+        title: "SSC",
+        company_name: "Noakhali Zilla School,Noakhali,Bangladesh",
+        icon: school,
+        iconBg: "#E6DEDD",
+        date: "2014",
+        points: [
+            "Science",
         ],
     },
 ];

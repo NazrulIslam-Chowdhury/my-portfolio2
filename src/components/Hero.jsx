@@ -13,19 +13,19 @@ const Hero = () => {
         <ul className="list-none flex flex-col gap-0">
           <li
             onClick={() => window.open(git)}
-            className="cursor-pointer bg-gray-700 p-2"
+            className="cursor-pointer bg-gray-700 p-2 hover:scale-125 transition-transform"
           >
             <AiFillGithub className="w-10 h-10" />
           </li>
           <li
             onClick={() => window.open(linkedin)}
-            className="cursor-pointer bg-blue-950 p-2"
+            className="cursor-pointer bg-blue-950 p-2 hover:scale-125 transition-transform"
           >
             <AiFillLinkedin className="w-10 h-10" />
           </li>
           <li
             onClick={() => window.open(facebook)}
-            className="cursor-pointer bg-blue-600 p-2"
+            className="cursor-pointer bg-blue-600 p-2 hover:scale-125 transition-transform"
           >
             <AiFillFacebook className="w-10 h-10" />
           </li>

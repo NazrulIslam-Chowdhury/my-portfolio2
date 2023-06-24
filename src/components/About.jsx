@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 import { services } from '../constants';
 import { Tilt } from 'react-tilt';
+import { image, image2 } from '../assets';
 
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -54,6 +55,20 @@ const About = () => {
       >
         I'm skilled web developer with experience in Javascript and have familiarity with Typescript, and expertise in frameworks like React JS, Node JS,CSS library like (Tailwind,Bootstrap and Material UI) and Non-RDMS MongoDB . I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
+
+      <div className='flex justify-center'>
+        <div className='relative mt-20 w-60 h-60 sm:h-96 sm:w-96 bg-primary overflow-hidden rounded-full
+      spin before:absolute before:inset-x-[70px] 
+      before:sm:inset-x-[100px]
+      before:inset-y-[-10px] before:bg-gradient-to-l before:duration-500 before:from-[#00cea8] before:to-[#bf61ff]
+      after:absolute after:inset-[6px] after:bg-primary after:rounded-full after:z-[1]
+      hover:before:inset-x-0 hover:before:inset-y-[-20px]'
+        >
+          <div className='absolute inset-[30px] border-solid border-[6px] border-primary z-[3] rounded-full overflow-hidden'>
+            <img src={image2} alt="" className='absolute top-0 left-0 w-full h-full rounded-full object-cover' />
+          </div>
+        </div>
+      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
