@@ -3,8 +3,9 @@ import { Canvas } from "@react-three/fiber";
 
 import CanvasLoader from "../Loader.jsx";
 import { Suspense, useEffect, useState } from "react";
+
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('/public/desktop_pc/scene.gltf');
+  const computer = useGLTF('/desktop_pc/scene.gltf');
 
   return (
     <mesh>

@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className="lg:fixed absolute left-0 top-80 sm:top-72 z-[1]">
+      <div className="lg:fixed absolute left-0 top-52 sm:top-80 z-[1]">
         <ul className="list-none flex flex-col gap-0">
           <li
             onClick={() => window.open(git)}

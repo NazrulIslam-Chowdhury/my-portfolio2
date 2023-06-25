@@ -39,6 +39,7 @@ import college from "./college.png";
 import university from "./university.png";
 import course from "./course.png";
 
+
 export {
   course,
   school,
