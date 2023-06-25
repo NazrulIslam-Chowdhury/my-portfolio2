@@ -4,18 +4,6 @@ export default {
   mode: "jit",
   theme: {
     extend: {
-      animation: {
-        'spin-slow': 'spin 10s linear infinite',
-      },
-
-      keyframes: {
-        spin: {
-          '0%': { transform: 'rotate(0deg)' },
-          // eslint-disable-next-line no-dupe-keys
-          '0%': { transform: 'rotate(360deg)' },
-        }
-      },
-
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
