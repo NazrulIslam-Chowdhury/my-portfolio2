@@ -30,7 +30,7 @@ import {
     // educavo,
     threejs,
     course,
-} from "../assets";
+} from "/public/assets";
 
 
 export const navLinks = [

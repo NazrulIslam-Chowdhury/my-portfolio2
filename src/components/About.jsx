@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 import { services } from '../constants';
 import { Tilt } from 'react-tilt';
-import { image, image2 } from '../assets';
+import { image2 } from '../../public/assets';
 
 
 const ServiceCard = ({ index, title, icon }) => {

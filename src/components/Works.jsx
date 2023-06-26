@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
 import { projects } from "../constants";
 import { Tilt } from "react-tilt";
-import { github } from "../assets";
+import { github } from "../../public/assets";
 import { RiLiveFill } from 'react-icons/ri';
 
 

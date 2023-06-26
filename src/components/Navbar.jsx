@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 
 import { navLinks } from "../constants/index"
-import { logo, menu, close, image } from "../assets";
+import { logo, menu, close, image } from "../../public/assets";
 
 
 
@@ -42,8 +42,8 @@ const Navbar = () => {
             ))
           }
           <li
-            className={`${active === link.title ? "" : "text-secondary"
-              }hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer before:absolute before:left-0 before:w-full before:h-[2px] before:bg-[#fff] before:opacity-0 before:top-0 before:translate-x-[10px] hover:before:opacity-5 hover:before:translate-y-0 transition-all `}
+            className={`${active === link.title ? "border-b-4 border-solid transition-all" : "text-secondary"
+              }hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer transition-all `}
             onClick={() => window.open(link)}>
             Download Resume
           </li>
@@ -77,13 +77,13 @@ const Navbar = () => {
               }
               <li
                 className={`${active === link.title ? "border-b-4 border-solid transition-all" : "text-secondary"
-                  } hover:text-white  text-[16px] font-medium font-poppins cursor-pointer transition-all`}
+                  } hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer transition-all`}
                 onClick={() => window.open(link)}
               >
                 Download Resume
               </li>
               <li className="flex flex-row gap-3 items-center mr-20">
-                <img src={image} alt="Nazrul Islam Chowdhury" className="w-28 h-28 object-cover rounded-full" />
+                <img src={image} alt="Nazrul Islam Chowdhury" className="w-24 h-24 object-cover rounded-full" />
                 <p>Nazrul Islam Chowdhury</p>
               </li>
             </ul>
