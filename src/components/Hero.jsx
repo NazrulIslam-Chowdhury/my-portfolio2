@@ -43,7 +43,7 @@ const Hero = () => {
             WebkitTextFillColor: "transparent"
           }}>Nazrul</span></h1>
           <p className="text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] mt-2">
-            I am a Frontend and MERN stack developer. I develope user interfaces and web application.
+            I am a Frontend and a MERN stack developer. I develope user interfaces and web application.
           </p>
         </div>
       </div>
