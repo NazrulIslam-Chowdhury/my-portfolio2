@@ -32,6 +32,9 @@ import wildlia from "/assets/wildlia.png";
 import bikescape from "/assets/bikescape.png";
 import travelguru from "/assets/travelguru.png";
 import educavo from "/assets/educavo.png";
+import noteMaker from "/assets/note-maker.png";
+import dashboard from "/assets/react-dashboard.png"
+
 import image from "/assets/image.jpg";
 import image2 from "/assets/image2.jpg";
 import school from "/assets/school.png";
@@ -77,5 +80,7 @@ export {
   wildlia,
   bikescape,
   travelguru,
-  educavo
+  educavo,
+  noteMaker,
+  dashboard,
 };

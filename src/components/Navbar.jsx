@@ -52,7 +52,7 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[20px h-[20px] object-contain cursor-pointer absolute z-[11] mr-2"
+            className="w-[20px] h-[20px] object-contain cursor-pointer absolute z-[11] mr-2"
             onClick={() => setToggle(!toggle)}
           />
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-black-100 absolute top-0 right-0 w-screen h-screen z-10 rounded`}>

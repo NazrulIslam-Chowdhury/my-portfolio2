@@ -12,22 +12,17 @@ import {
     tailwind,
     nodejs,
     mongodb,
-    // git,
     github1,
     figma,
-    // docker,
     bootstrap,
-    // meta,
-    // starbucks,
-    // tesla,
-    // shopify,
     school,
     college,
     university,
     wildlia,
     bikescape,
     travelguru,
-    // educavo,
+    noteMaker,
+    dashboard,
     threejs,
     course,
 } from "/public/assets";
@@ -325,6 +320,60 @@ const projects = [
         image: bikescape,
         source_code_link: "https://github.com/NazrulIslam-Chowdhury/bike-scape",
         live_demo_link: "https://bike-scape.web.app",
+    },
+
+    {
+        name: "Note Maker",
+        description:
+            "Web-based platform that allows users to make notes and manage them like delete them,edit them and download them.User also can categorized them by creating category and manage the categories also",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "node js",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: noteMaker,
+        source_code_link: "https://github.com/NazrulIslam-Chowdhury/note-maker",
+        live_demo_link: "https://note-maker23.web.app",
+    },
+
+    {
+        name: "React Dashboard",
+        description:
+            "An admin dashboard with different types of charts.User can experience a smooth UI/UX",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mui",
+                color: "green-text-gradient",
+            },
+            {
+                name: "full calendar",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "nivo charts",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: dashboard,
+        source_code_link: "https://github.com/NazrulIslam-Chowdhury/react-dashboard",
+        live_demo_link: "https://simple-dashboard23.netlify.app",
     },
 ];
 
