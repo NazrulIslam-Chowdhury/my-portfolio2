@@ -33,7 +33,9 @@ import bikescape from "/assets/bikescape.png";
 import travelguru from "/assets/travelguru.png";
 import educavo from "/assets/educavo.png";
 import noteMaker from "/assets/note-maker.png";
-import dashboard from "/assets/react-dashboard.png"
+import dashboard from "/assets/react-dashboard.png";
+import firstHomes from "/assets/first-homes.onrender.com.png";
+import photoGallery from "/assets/react-simple-photo-gallery.netlify.app.png";
 
 import image from "/assets/image.jpg";
 import image2 from "/assets/image2.jpg";
@@ -41,7 +43,6 @@ import school from "/assets/school.png";
 import college from "/assets/college.png";
 import university from "/assets/university.png";
 import course from "/assets/course.png";
-
 
 export {
   course,
@@ -83,4 +84,6 @@ export {
   educavo,
   noteMaker,
   dashboard,
+  firstHomes,
+  photoGallery,
 };
