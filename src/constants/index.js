@@ -27,6 +27,7 @@ import {
   photoGallery,
   threejs,
   course,
+  weero,
 } from "/public/assets";
 
 export const navLinks = [
@@ -120,16 +121,18 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Working with Html5",
-    company_name: "Html",
-    icon: html,
-    iconBg: "#383E56",
-    date: " 2021 - present",
+    title: "Full Stack Developer Intern",
+    company_name: "Weero Digital",
+    icon: weero,
+    iconBg: "#ffffff",
+    date: " 1.02.2024 - 31.05.2024",
+    link: "https://weerodigital.com",
     points: [
-      "Developing and maintaining web applications using Html 5 and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Implemented a new feature that increased user engagement.",
+      "Troubleshooted and resolved critical website bugs, ensuring optimal performance.",
+      "Collaborated with a team of designers to create a visually appealing and intuitive user interface.",
+      "Managed multiple projects simultaneously, meeting deadlines and exceeding client expectations.",
+      "Presented technical findings and recommendations to senior management.",
     ],
   },
   {

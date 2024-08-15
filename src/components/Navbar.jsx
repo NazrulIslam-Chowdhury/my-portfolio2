@@ -10,7 +10,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
-  const link = "https://drive.google.com/file/d/1ipt94NgHMX93enoyp1Reue32AHPWlaxa/view?usp=drive_link";
+  const link = "https://drive.google.com/file/d/1auMzlAb1qCr5UTVpXO3sgCCeuKkyy-tb/view?usp=drive_link";
   return (
     <nav
       className='sm:px-16 px-6 w-full flex items-center fixed top-0 z-20 backdrop-blur-2xl'

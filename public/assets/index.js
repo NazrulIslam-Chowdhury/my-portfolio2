@@ -27,6 +27,7 @@ import meta from "/assets/company/meta.png";
 import shopify from "/assets/company/shopify.png";
 import starbucks from "/assets/company/starbucks.png";
 import tesla from "/assets/company/tesla.png";
+import weero from "/assets/company/weero.png";
 
 import wildlia from "/assets/wildlia.png";
 import bikescape from "/assets/bikescape.png";
@@ -78,6 +79,7 @@ export {
   shopify,
   starbucks,
   tesla,
+  weero,
   wildlia,
   bikescape,
   travelguru,

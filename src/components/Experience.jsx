@@ -22,9 +22,9 @@ const ExperienceCard = ({ experience }) => (
   >
     <div>
       <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-      <p className='text-secondary text-[16px] font-semibold'
+      <a href={experience?.link||"/"} target='_blank' rel='noreferrer' className='text-secondary text-[16px] font-semibold'
         style={{ margin: 0 }}
-      >{experience.company_name}</p>
+      >{experience.company_name}</a>
     </div>
 
     <ul className='mt-5 list-disc space-y-2 pl-2'>
