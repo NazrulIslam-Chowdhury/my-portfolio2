@@ -40,6 +40,7 @@ import photoGallery from "/assets/react-simple-photo-gallery.png";
 
 import image from "/assets/image.jpg";
 import image2 from "/assets/image2.jpg";
+import image4 from "/assets/image4.png";
 import school from "/assets/school.png";
 import college from "/assets/college.png";
 import university from "/assets/university.png";
@@ -52,6 +53,7 @@ export {
   university,
   image,
   image2,
+  image4,
   logo,
   backend,
   creator,

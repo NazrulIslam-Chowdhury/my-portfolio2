@@ -13,7 +13,7 @@ const Navbar = () => {
   const link = "https://drive.google.com/file/d/1auMzlAb1qCr5UTVpXO3sgCCeuKkyy-tb/view?usp=drive_link";
   return (
     <nav
-      className='sm:px-16 px-6 w-full flex items-center fixed top-0 z-20 backdrop-blur-2xl'
+      className='sm:px-16 px-6 w-full flex items-center fixed top-0 z-20'
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -25,7 +25,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-32 h-32 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
+          <p className="text-white text-[16px] font-bold cursor-pointer uppercase">
             Nazrul <br /><span className="hidden md:inline lg:inline">Islam</span> Chowdhury
           </p>
         </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
             navLinks.map((link) => (
               <li
                 key={link.id}
-                className={`${active === link.title ? "border-b-4 border-solid" : "text-secondary"}hover:text-white hover:border-b-4 hover:border-solid text-[18px] font-medium cursor-pointer transition-all`}
+                className={`${active === link.title ? "border-b-4 border-solid" : "text-secondary"}hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium cursor-pointer transition-all uppercase`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -43,7 +43,7 @@ const Navbar = () => {
           }
           <li
             className={`${active === link.title ? "border-b-4 border-solid transition-all" : "text-secondary"
-              }hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer transition-all `}
+              }hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer transition-all uppercase`}
             onClick={() => window.open(link)}>
             Download Resume
           </li>

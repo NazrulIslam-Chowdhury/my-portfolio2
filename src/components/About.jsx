@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 import { services } from '../constants';
 import { Tilt } from 'react-tilt';
-import { image2 } from '../../public/assets';
+import { image4 } from '../../public/assets';
 
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -65,7 +65,7 @@ const About = () => {
       hover:before:inset-x-0 hover:before:inset-y-[-20px]'
         >
           <div className='absolute inset-[30px] border-solid border-[6px] border-primary z-[3] rounded-full overflow-hidden'>
-            <img src={image2} alt="" className='absolute top-0 left-0 w-full h-full rounded-full object-cover' />
+            <img src={image4} alt="" className='absolute top-0 left-0 w-full h-full rounded-full object-cover' />
           </div>
         </div>
       </div>
