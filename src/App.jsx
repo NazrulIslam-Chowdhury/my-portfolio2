@@ -21,7 +21,7 @@ const App = () => {
 
     window.addEventListener("scroll", () => {
       const scrollY = window.scrollY;
-      const parallaxSpeed = 0.2; // Adjust the speed as needed
+      const parallaxSpeed = 0.1; // Adjust the speed as needed
       backgroundImage.style.transform = `translate3d(0, -${
         scrollY * parallaxSpeed
       }px, 0)`;

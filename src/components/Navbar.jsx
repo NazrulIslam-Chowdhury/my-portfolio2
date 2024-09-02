@@ -34,7 +34,7 @@ const Navbar = () => {
             navLinks.map((link) => (
               <li
                 key={link.id}
-                className={`${active === link.title ? "border-b-4 border-solid" : "text-secondary"}hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium cursor-pointer transition-all uppercase`}
+                className={`${active === link.title ? "" : "text-secondary"}hover:text-white after:absolute after:w-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-white hover:after:w-full after:duration-300 text-[16px] font-medium cursor-pointer transition-all uppercase relative`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -42,8 +42,8 @@ const Navbar = () => {
             ))
           }
           <li
-            className={`${active === link.title ? "border-b-4 border-solid transition-all" : "text-secondary"
-              }hover:text-white hover:border-b-4 hover:border-solid text-[16px] font-medium font-poppins cursor-pointer transition-all uppercase`}
+            className={`${active === link.title ? "" : "text-secondary"
+              }hover:text-black after:absolute after:w-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-white hover:after:w-full after:duration-500 text-[16px] font-medium font-poppins cursor-pointer transition-all uppercase relative overflow-hidden`}
             onClick={() => window.open(link)}>
             Download Resume
           </li>
