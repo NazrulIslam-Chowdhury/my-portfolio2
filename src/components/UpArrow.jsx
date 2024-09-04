@@ -20,14 +20,16 @@ const UpArrow = () => {
     };
   }, []);
   return (
-    <div>
+    <>
       <a
         href="#"
-        className={`${showArrow ? "fixed bottom-0 right-2" : "-right-2"} duration-300`}
+        className={`${
+          showArrow ? "fixed bottom-2 right-2" : "-right-2 bottom-2"
+        } duration-500 bg-white p-3`}
       >
-        <AiOutlineArrowUp className="w-14 h-20 animate-bounce" />
+        <AiOutlineArrowUp className="w-12 h-12 text-black" />
       </a>
-    </div>
+    </>
   );
 };
 

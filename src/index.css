@@ -222,3 +222,60 @@
 .background-image{
   transform: translate3d(0, 0, 0);
 }
+
+.custom-shape-divider-top-1725424222 {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 150%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1725424222 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1725424222 .shape-fill {
+  fill: #E5E7EB;
+}
+
+.wave1{
+  animation: animate 3.5s linear infinite alternate;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+.wave2{
+  animation: animate2 4s linear infinite alternate;
+}
+
+@keyframes animate2{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+.wave3{
+  animation: animate3 4.5s linear infinite alternate;
+}
+
+@keyframes animate3{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}

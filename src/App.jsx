@@ -60,7 +60,7 @@ const App = () => {
           <div className="relative z-0">
             <Contact />
             <StarCanvas />
-            <Footer />
+            {/* <Footer /> */}
           </div>
           <UpArrow />
         </div>
