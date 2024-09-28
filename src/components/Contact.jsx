@@ -75,7 +75,7 @@ const Contact = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       // className="sm:px-16 px-6 sm:py-16 py-10 max-w-7xl mx-auto relative z-0 xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden"
-      className="bg-black overflow-hidden"
+      className="bg-black relative overflow-hidden"
       id="contact"
     >
       <div className="custom-shape-divider-top-1725424222">
@@ -220,7 +220,7 @@ const Contact = () => {
             </label>
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-2xl shadow-black hover:bg-blue-950 rounded"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold hover:bg-blue-950 rounded"
             >
               {loading ? "Sending..." : "Send"}
             </button>
