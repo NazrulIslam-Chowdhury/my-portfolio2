@@ -37,6 +37,7 @@ import noteMaker from "/assets/note-maker.png";
 import dashboard from "/assets/react-dashboard.png";
 import firstHomes from "/assets/first-homes.png";
 import photoGallery from "/assets/react-simple-photo-gallery.png";
+import mediHealth from "/assets/medi-health.png";
 
 import image from "/assets/image.jpg";
 import image2 from "/assets/image2.jpg";
@@ -90,4 +91,5 @@ export {
   dashboard,
   firstHomes,
   photoGallery,
+  mediHealth
 };

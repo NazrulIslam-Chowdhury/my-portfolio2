@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
+import { fadeIn, staggerContainer } from "../utils/motion";
 import { projects } from "../constants";
-import { Tilt } from "react-tilt";
 import { github } from "../../public/assets";
 import { RiLiveFill } from "react-icons/ri";
+import { useMemo, useState } from "react";
 
 const letterVariants = {
   hidden: { opacity: 0, y: 300 },
@@ -22,8 +22,8 @@ const ProjectCard = ({
   image,
 }) => {
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    <div
+      // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       className="h-[26rem] group relative overflow-hidden cursor-pointer"
     >
       {/* <Tilt
@@ -81,11 +81,19 @@ const ProjectCard = ({
         </div>
       </div>
       {/* </Tilt> */}
-    </motion.div>
+    </div>
   );
 };
 
 const Works = () => {
+  const [activeFilter, setActiveFilter] = useState("React");
+
+  const projectsFilter = projects.filter((project) => {
+    return project.category === activeFilter;
+  });
+
+  console.log(projectsFilter);
+
   return (
     <motion.section
       variants={staggerContainer()}
@@ -175,8 +183,8 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+        <p
+          // variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcase of my skills and experience through
@@ -184,11 +192,36 @@ const Works = () => {
           links to code repositories and live demos in it.It reflects my ability
           to solve complex problems, work with different technologies, and
           manage projects effectively.
-        </motion.p>
+        </p>
+      </div>
+
+      <div className="flex justify-center items-center mt-10">
+        <ul className="flex text-black-200 border-[1px] border-gray-500 rounded-3xl overflow-hidden">
+          <li
+            onClick={() => setActiveFilter("React")}
+            className={`${
+              activeFilter === "React"
+                ? "bg-black/50 rounded-s-3xl text-[#353940]"
+                : "text-[#6B7280] relative before:absolute before:w-0 before:h-full before:bottom-0 before:left-0 before:bg-black/50 before:duration-300 before:transition-all before:rounded-s-3xl hover:before:w-full"
+            } cursor-pointer border-r-2 border-r-gray-500 px-6 py-3 font-medium `}
+          >
+            React
+          </li>
+          <li
+            onClick={() => setActiveFilter("Next Js")}
+            className={`${
+              activeFilter === "Next Js"
+                ? "bg-black/50 rounded-e-3xl text-[#353940]"
+                : "text-[#6B7280] relative before:absolute before:w-0 before:h-full before:bottom-0 before:right-0 before:bg-black/50 before:duration-300 before:transition-all before:rounded-e-3xl hover:before:w-full"
+            } cursor-pointer px-6 py-3 font-medium `}
+          >
+            Next Js
+          </li>
+        </ul>
       </div>
 
       <div className="mt-20 grid grid-cols-1 lg:grid-cols-2">
-        {projects.map((project, index) => (
+        {projectsFilter.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} index={index} />
         ))}
       </div>

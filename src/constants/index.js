@@ -25,6 +25,7 @@ import {
   dashboard,
   firstHomes,
   photoGallery,
+  mediHealth,
   threejs,
   course,
   weero,
@@ -240,6 +241,7 @@ const testimonials = [
 
 const projects = [
   {
+    category: "React",
     name: "First Homes",
     description:
       "A real estate application where user can listing their properties for sale or rent.An user can buy or rent properties from an owner",
@@ -267,6 +269,7 @@ const projects = [
   },
 
   {
+    category: "React",
     name: "Wildlia",
     description:
       "Personal tour guide web application that enables users to hire tour guide for them. Users can add a service place. Users also can give a review and delete or update a review",
@@ -294,6 +297,7 @@ const projects = [
   },
 
   {
+    category: "React",
     name: "Travel Guru",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -322,6 +326,7 @@ const projects = [
   },
 
   {
+    category: "React",
     name: "Bike Scape",
     description:
       "Web-based platform that allows users to buy and manage bikes from various seller, providing an efficient solution for bike lovers.Users can add their bike for sell.",
@@ -349,6 +354,7 @@ const projects = [
   },
 
   {
+    category: "React",
     name: "Note Maker",
     description:
       "Web-based platform that allows users to make notes and manage them like delete them,edit them and download them.User also can categorized them by creating category and manage the categories also",
@@ -376,6 +382,7 @@ const projects = [
   },
 
   {
+    category: "React",
     name: "React Dashboard",
     description:
       "An admin dashboard with different types of charts.User can experience a smooth UI/UX",
@@ -404,6 +411,34 @@ const projects = [
   },
 
   {
+    category: "Next Js",
+    name: "Medi Health",
+    description:
+      "A web-based patient management system built with Next.js, TypeScript, Tailwind CSS, Appwrite, and Sentry. This system helps healthcare providers efficiently manage patient information, appointments, and medical records.",
+    tags: [
+      {
+        name: "next js",
+        color: "black-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mediHealth,
+    source_code_link: "https://github.com/NazrulIslam-Chowdhury/medi-health",
+    live_demo_link: "https://medi-health24.vercel.app/",
+  },
+  {
+    category: "React",
     name: "React Photo Gallery",
     description:
       "A photo gallery where user can add and maintain photo by deleting,sorting and drag and drop with dark mode.",
