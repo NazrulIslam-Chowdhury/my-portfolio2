@@ -201,8 +201,8 @@ const Works = () => {
             onClick={() => setActiveFilter("React")}
             className={`${
               activeFilter === "React"
-                ? "bg-black/50 rounded-s-3xl text-[#353940]"
-                : "text-[#6B7280] relative before:absolute before:w-0 before:h-full before:bottom-0 before:left-0 before:bg-black/50 before:duration-300 before:transition-all before:rounded-s-3xl hover:before:w-full"
+                ? "bg-cyan-700/50 rounded-s-3xl text-[#353940]"
+                : "text-[#6B7280] relative before:absolute before:w-0 before:h-full before:bottom-0 before:left-0 before:bg-cyan-700/50 before:duration-300 before:transition-all before:rounded-s-3xl hover:before:w-full"
             } cursor-pointer border-r-2 border-r-gray-500 px-6 py-3 font-medium `}
           >
             React
